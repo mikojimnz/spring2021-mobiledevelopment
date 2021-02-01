@@ -7,11 +7,12 @@ class Sidebar extends Component {
   }
 
   render () {
-   
+
     let responseHTML = '';
 
     this.props.menu.forEach( (item) => {
       // TODO: Add (concatenate) the value of each item to the variable responseHTML. Each should be wrapped in <li></li>
+      responseHTML = responseHTML.concat(`<li>${item}</li>`);
     });
 
     return responseHTML;
