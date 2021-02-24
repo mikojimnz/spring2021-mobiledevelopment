@@ -1,22 +1,18 @@
-import logo from './logo.svg';
 import './App.css';
+// Import new components
+import Laps from './components/Tracker1';
+import Pushups from './components/Tracker2';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <h1>Exercise Tracker</h1>
+        <div>
+           {/* Render Trackers */}
+          <Laps/>
+          <Pushups/>
+        </div>
       </header>
     </div>
   );
