@@ -6,7 +6,13 @@ import {Card, Button} from 'react-native-elements';
 export default function App() {
   return (
     <View style={styles.container}>
-      
+      <Card>
+        <Card.Title>Miko Jimenez</Card.Title>
+        <Text>Alfredo</Text>
+        <Card.Divider/>
+        <Text>Shepherd's Pie</Text>
+        <Button title="Press"></Button>
+      </Card>
     </View>
   );
 }
